@@ -1,4 +1,4 @@
-                                //timer.h中加入对TIM3_PWM_Init的申明//
+                                //timer.h脰脨录脫脠毛露脭TIM3_PWM_Init碌脛脡锚脙梅//
 #ifndef __TIMER_H
 #define __TIMER_H
 #include "sys.h"
