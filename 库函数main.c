@@ -1,4 +1,4 @@
-//¿âº¯Êı°æ±¾main.c//
+//åº“å‡½æ•°ç‰ˆæœ¬main.c//
 #include "led.h"
 #include "delay.h"
 #include "key.h"
@@ -9,11 +9,11 @@ int main(void)
 {
 	u16 led0pwmval = 0;
 	u8 dir = 1;
-	delay_init();									//ÑÓÊ±º¯Êı³õÊ¼»¯
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //ÉèÖÃNVICÖĞ¶Ï·Ö×é2:2Î»ÇÀÕ¼ÓÅÏÈ¼¶£¬2Î»ÏìÓ¦ÓÅÏÈ¼¶
-	uart_init(115200);								//´®¿Ú³õÊ¼»¯Îª115200
-	LED_Init();										// LED¶Ë¿Ú³õÊ¼»¯
-	TIM3_PWM_Init(899, 0);							//²»·ÖÆµ¡£PWMÆµÂÊ=72000000/900=80Khz
+	delay_init();									//å»¶æ—¶å‡½æ•°åˆå§‹åŒ–
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //è®¾ç½®NVICä¸­æ–­åˆ†ç»„2:2ä½æŠ¢å ä¼˜å…ˆçº§ï¼Œ2ä½å“åº”ä¼˜å…ˆçº§
+	uart_init(115200);								//ä¸²å£åˆå§‹åŒ–ä¸º115200
+	LED_Init();										// LEDç«¯å£åˆå§‹åŒ–
+	TIM3_PWM_Init(899, 0);							//ä¸åˆ†é¢‘ã€‚PWMé¢‘ç‡=72000000/900=80Khz
 	while (1)
 	{
 		delay_ms(10);
