@@ -1,0 +1,4 @@
+标准库函数版本流程
+1.编写main.c代码如图
+2.在timer.c中添加图示代码
+3.在time.h中加入对 TIM3_PWM_Init 的声明
